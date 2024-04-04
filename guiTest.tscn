@@ -1,0 +1,59 @@
+[gd_scene load_steps=5 format=3 uid="uid://dlhpe583lam4p"]
+
+[ext_resource type="Texture2D" uid="uid://by1s8ot3a2kbe" path="res://Images/1.png" id="1_guqvk"]
+[ext_resource type="Texture2D" uid="uid://c13kcdvwqt1tu" path="res://Images/2.png" id="2_rqrut"]
+[ext_resource type="Texture2D" uid="uid://crfuk27nb8pqb" path="res://Images/3.png" id="3_2hfvb"]
+[ext_resource type="Texture2D" uid="uid://4yalvdem6ihm" path="res://Images/4.png" id="4_u83wm"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 92.0
+offset_top = 239.0
+offset_right = 165.0
+offset_bottom = 270.0
+text = "test text"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 332.0
+offset_top = 74.0
+offset_right = 400.0
+offset_bottom = 97.0
+text = "labeltest"
+
+[node name="TextureButton" type="TextureButton" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 445.0
+offset_top = 223.0
+offset_right = 1597.0
+offset_bottom = 871.0
+texture_normal = ExtResource("1_guqvk")
+texture_pressed = ExtResource("2_rqrut")
+texture_hover = ExtResource("3_2hfvb")
+texture_disabled = ExtResource("4_u83wm")
+
+[node name="LineEdit" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 417.0
+offset_top = 69.0
+offset_right = 484.063
+offset_bottom = 100.0
+
+[node name="HSlider" type="HSlider" parent="."]
+layout_mode = 0
+offset_left = 596.0
+offset_top = 74.0
+offset_right = 971.0
+offset_bottom = 103.0
+min_value = 1.0
+max_value = 5.0
+value = 1.0
+tick_count = 5
+ticks_on_borders = true
